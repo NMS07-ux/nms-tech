@@ -1,0 +1,6 @@
+// NMS Web Lab — starter interaction
+document.querySelectorAll('[data-action]').forEach((el) => {
+  el.addEventListener('click', () => {
+    console.log('Action:', el.dataset.action);
+  });
+});

@@ -1,0 +1,16 @@
+// Urban Pulse — starter Arduino sketch
+// Reads MQ-2 gas + noise sensor and prints values for Bluetooth/LCD integration.
+const int GAS_PIN = A0;
+const int NOISE_PIN = A1;
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+  int gas = analogRead(GAS_PIN);
+  int noise = analogRead(NOISE_PIN);
+  Serial.print("GAS:");
+  Serial.print(gas);
+  Serial.print(",NOISE:");
+  Serial.println(noise);
+  delay(500);
+}

@@ -1,0 +1,6 @@
+# AI Lab — starter experiment
+# Add your own model/API logic here.
+def run_experiment(user_input):
+    print("Input:", user_input)
+    # TODO: connect your chosen AI model or local pipeline.
+    return "Experiment result"
